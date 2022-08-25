@@ -1,0 +1,91 @@
+div.content {
+  display: grid;
+  grid-template-areas: 
+    'view view view view'
+    'btn1 btn2 btn5 btn5'
+    'btn3 btn4 btn5 btn5';
+  background-color: #946DDA;
+
+  gap: 5px;
+  justify-content: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+
+  max-width: 380px;
+  padding: 5em;
+  margin: 100px auto auto auto;
+}
+
+button {
+  font-size: 3em;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#viewfinder {
+  background-color: #4D3751;
+  border: 1px solid #290c4880;
+  border-radius: 8px;
+
+  width: 15em;
+  padding: 20px;
+  grid-area: view;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 1px 1px 5px black;
+}
+
+#viewfinder:hover {
+  box-shadow: 1px 1px 5px white;
+}
+
+button.btn {
+  background-color: white;
+  color: #71537B;
+  border: 2px solid rgba(102, 102, 102, 0.575);
+
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px black;
+}
+
+#btn1 {
+  grid-area: btn1;
+}
+
+#btn2 {
+  grid-area: btn2;
+}
+
+
+#btn3 {
+  grid-area: btn3;
+}
+
+#btn4 {
+  grid-area: btn4;
+}
+
+#btn5 {
+  background-color: #66BE5C;
+  color: white;
+  border: 2px solid rgb(61, 61, 61);
+
+  border-radius: 8px;
+  grid-area: btn5;
+  height: 100%;
+
+  box-shadow: 2px 1px 2px black;
+}
+
+button:hover, #btn5:hover {
+  border: 2px solid grey;
+  box-shadow: 1px 1px 2px white;
+}
+
+button:active, #btn5:active {
+  color: grey;
+  border: 2px solid white;
+  box-shadow: 1px 1px 2px black;
+}
